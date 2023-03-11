@@ -16,7 +16,7 @@ public class TextComponent extends AbstractTextComponent {
     public String operation() {
         return componentList.stream()
                 .map(AbstractTextComponent::operation)
-                .collect(Collectors.joining(getComponentType().getDelimiter()));
+                .collect(Collectors.joining());
     }
 
     @Override
